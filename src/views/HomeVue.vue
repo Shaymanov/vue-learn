@@ -7,7 +7,8 @@
     <button class="btn btn-primary" v-on:click="reset">Сбросить &#x466;</button>
     <br>
     <a v-bind:href="site" class="btn btn-primary">First</a>
-    <input type="text" v-bind:placeholder="text" v-bind:value="valueInput" v-on:input="changeInput" class="btn btn-danger">
+    <input type="text" v-bind:placeholder="text" v-bind:value="valueInput" v-on:input="changeInput"
+      class="btn btn-danger">
     <h1>Значение ввода: <span style="max-width: 100%; ">{{ valueInput }} </span></h1>
   </div>
 </template>
@@ -24,20 +25,20 @@ export default {
   },
   methods: {
     // названия методам даешь сам
-    encrease(){
+    encrease() {
       this.counter++
     },
-    // названия методам даешь сам
-    decrease(){
+ 
+    decrease() {
       this.counter--
     },
-    reset(){
+    reset() {
       this.counter = 0
     },
 
     changeInput() {
       this.valueInput = event.target.value
-    }    
+    }
   }
 }
 </script>
@@ -45,10 +46,9 @@ export default {
 <style lang="scss" scoped>
 $red: #ff0000cf;
 
-.btn{
+.btn {
   margin: 5px;
 }
-
 </style>
 
 
