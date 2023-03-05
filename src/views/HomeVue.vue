@@ -20,7 +20,7 @@ export default {
       text: 'enter the text',
       counter: 0,
       site: 'http://localhost:8080/first',
-      valueInput: 'enter the text'
+      valueInput: ''
     }
   },
   methods: {
@@ -28,7 +28,7 @@ export default {
     encrease() {
       this.counter++
     },
- 
+
     decrease() {
       this.counter--
     },
