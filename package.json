@@ -14,23 +14,29 @@
     "register-service-worker": "^1.7.2",
     "router": "^1.3.7",
     "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "@volar-plugins/vetur": "latest",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-pwa": "^5.0.8",
     "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "^5.0.8",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
     "eslint": "^8.30.0",
     "eslint-plugin-vue": "^9.8.0",
     "sass": "^1.57.1",
-    "sass-loader": "^13.2.0"
+    "sass-loader": "^13.2.0",
+    "typescript": "~4.5.5"
   },
   "eslintConfig": {
     "root": true,
@@ -39,10 +45,11 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@typescript-eslint/parser"
     },
     "rules": {}
   },
